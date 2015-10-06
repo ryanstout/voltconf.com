@@ -1,0 +1,110 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+html {
+  // font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+}
+
+footer {
+  a , a:active, a:visited, li a, li a:active, li a:visited {
+    color: #64b5f6
+  }
+}
+
+.intro1 {
+  font-size: 1.2em;
+  font-weight: 500;
+
+  strong {
+    font-weight: 900;
+  }
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #bbb;
+}
+
+nav .brand-logo {
+  font-size: 1.4em;
+}
+
+p {
+  line-height: 2rem;
+}
+
+label {
+  color: #FFF;
+  font-size: 1.2em;
+}
+
+.signup1 {
+  padding-top: 4em;
+}
+
+.banner {
+  background-image: asset-url('../images/banner2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 780px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+  font-weight: 300;
+}
+
+.banner .section {
+  width: 100%;
+  padding-top: 150px;
+}
+
+.banner .welcome h1 {
+  font-size: 3.2rem;
+  line-height: 3.62rem;
+  margin: 1.1rem 0 0.68rem 0;
+  font-weight: 300;
+}
+
+.banner .welcome h5 {
+  font-weight: 500;
+}
+
+@media only screen and (max-width : 992px) {
+  .banner .section {
+    position: absolute;
+    top: 30%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}

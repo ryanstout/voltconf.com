@@ -1,0 +1,45 @@
+<:Title>
+  {{ view main_path, "title", {controller_group: 'main'} }}
+
+<:Body>
+
+<:banner />
+
+<:toast:notices />
+
+<div class="section">
+
+  {{ view main_path, 'body', {controller_group: 'main'} }}
+
+</div>
+
+<footer class="page-footer brown lighten-1">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">VoltFramework</h5>
+        <p class="grey-text text-lighten-4">New to Volt?  Volt is a web framework where you write your client and server code in Ruby.  Client side code is transpiled to JavaScript using (<a href="http://opalrb.org/">Opal</a>).  Volt lets you share code between the client and server.  Learn more <a href="https://github.com/voltrb/volt">here</a>.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Find out more</h5>
+        <ul>
+          <li><a href="http://voltframework.com">VoltFramework.com</a></li>
+          <li><a href="https://github.com/voltrb/volt">Volt Github</a></li>
+          <li><a href="http://rubyconf.org/">Rubyconf</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2015 AgileProductions LLC
+    </div>
+  </div>
+</footer>
+
+
+<:Nav>
+  <li class="{{ if active_tab? }}active{{ end }}">
+    <a href="{{ attrs.href }}">{{ yield }}</a>
+  </li>
+
