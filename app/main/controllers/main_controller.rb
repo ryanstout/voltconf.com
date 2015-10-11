@@ -14,6 +14,12 @@ module Main
       self.model = store.signups.buffer
       puts "SIGNUPS"
     end
+    
+    def banner_ready
+      if RUBY_PLATFORM == 'opal'
+        `$('.parallax').parallax();`
+      end
+    end
 
     def signup
       model.save!.then do

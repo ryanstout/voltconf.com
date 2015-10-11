@@ -9,7 +9,36 @@
 html {
   // font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-weight: 400;
+  font-weight: 300;
+  font-family: 'Merriweather';
+}
+
+h1 {
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  font-size: 5em;
+}
+
+h2, h5 {
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+}
+
+section {
+  padding: 80px 0px !important;
+  &.small {
+    padding: 20px 0px !important;
+  }
+}
+
+.row {
+  &.no-margin {
+    margin: 0px;
+  }
+}
+
+.control-label {
+  color: black;
 }
 
 footer {
@@ -37,7 +66,8 @@ nav .brand-logo {
 }
 
 p {
-  line-height: 2rem;
+  font-size: 1.4em;
+  line-height: 1.7;
 }
 
 label {
@@ -49,21 +79,23 @@ label {
   padding-top: 4em;
 }
 
-.banner {
-  background-image: asset-url('../images/banner2.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  min-height: 780px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-  font-weight: 300;
-}
-
-.banner .section {
-  width: 100%;
-  padding-top: 150px;
+.parallax-container {
+  height: 600px;
+  .parallax {
+    .container {
+      position: relative;
+      z-index: 1;
+      h1 {
+        font-family: 'amatic sc';
+      }
+      p {
+        color: gray;
+      }
+    }
+  }
+  img {
+    max-width: 100%;
+  }
 }
 
 .banner .welcome h1 {

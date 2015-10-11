@@ -1,31 +1,38 @@
-<div id="index-banner" class="banner">
-  <div class="section no-pad-bot welcome">
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="{{ asset_url('../../assets/images/banner3.jpg') }}" />
+    
     <div class="container">
       <br><br>
-      <h1 class="header center grey-text text-darken-1">volt/opal mini conference</h1>
+      <h1 class="header center white-text">Volt/Opal mini conference</h1>
       <div class="row center">
-        <h5 class="header col s12 white-text">Monday 11/16 at 8:00pm</h5>
+        <h5 class="header col s12 white-text">Monday, November 16th at 8:00pm EST</h5>
       </div>
       <div class="row center">
-        <div class="col s6 offset-s3 intro1">
-          <p>
-            Interested in Volt/Opal?  Join the community for an evening <strong><u>in person/remote mini-conference</u></strong> the evening after Rubyconf's 2nd day.
-          </p>
-        </div>
-      </div>
-      <form e-submit="signup">
-        <div class="row signup1">
-            <div class="col s5 offset-s3">
-              <:fields:text value="{{ email }}" />
-            </div>
-            <div class="col s1">
-              <button class="btn-large waves-effect waves-light red">Signup</button>
+        <form e-submit="signup">
+          <div class="row no-margin">
+              <div class="col s12 m6 offset-m2">
+                <:fields:text value="{{ email }}" placeholder='Enter your email...' />
+              </div>
+              <div class="col m2">
+                <button class="btn-large waves-effect waves-light red lighten-1">Signup</button>
+              </div>
             </div>
           </div>
-        </div>
-      </form>
-      <br><br>
-
+        </form>
+        
+      </div>
     </div>
   </div>
 </div>
+
+<section class='container small'>
+  <div class="row no-margin">
+    <div class="col s12 m8 offset-m2">
+      <p>
+        <!-- Interested in Volt/Opal?  Join the community for an evening <strong><u>in person/remote mini-conference</u></strong> the evening after Rubyconf's 2nd day. -->
+        Join the Volt and Opal community for a mini conference - immediately following Rubyconf's 2nd day.
+      </p>
+    </div>
+  </div>
+</section>
