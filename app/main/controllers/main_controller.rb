@@ -10,11 +10,9 @@ module Main
     end
 
     def banner
-      puts "MAIN1"
       self.model = store.signups.buffer
-      puts "SIGNUPS"
     end
-    
+
     def banner_ready
       if RUBY_PLATFORM == 'opal'
         %x{
